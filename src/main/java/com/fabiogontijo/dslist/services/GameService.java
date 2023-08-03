@@ -1,10 +1,12 @@
 package com.fabiogontijo.dslist.services;
 
+import com.fabiogontijo.dslist.controller.GameInput;
 import com.fabiogontijo.dslist.dto.GameDTO;
 import com.fabiogontijo.dslist.dto.GameMinDTO;
 import com.fabiogontijo.dslist.entities.Game;
 import com.fabiogontijo.dslist.projections.GameMinProjection;
 import com.fabiogontijo.dslist.repositories.GameRepository;
+import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
+@Builder
 @Service
 public class GameService {
 
